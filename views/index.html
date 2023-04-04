@@ -1,13 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>File Metadata Microservice</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    Hello world
-</body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>File Metadata Microservice</h1>
+
+    <div class="wrapper">
+      <div class="usage">
+        <h3>Usage:</h3>
+        <code>POST url/api/fileanalyse</code>
+        <code>
+          { <br />
+          "name": "file name" <br />
+          "type" : "file type" <br />
+          "size": "file size in bytes" <br />}
+        </code>
+      </div>
+
+      <form action="" method="post" enctype="multipart/form-data">
+        <input type="file" name="upfile" id="upload" />
+        <button type="submit">Upload</button>
+      </form>
+    </div>
+  </body>
 </html>
