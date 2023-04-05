@@ -14,15 +14,15 @@
       <div class="usage">
         <h3>Usage:</h3>
         <code>POST url/api/fileanalyse</code>
-        <code>
+        <code class="example">
           { <br />
           "name": "file name" <br />
-          "type" : "file type" <br />
+          "type": "file type" <br />
           "size": "file size in bytes" <br />}
         </code>
       </div>
 
-      <form action="" method="post" enctype="multipart/form-data">
+      <form action="/api/fileanalyse" method="post" enctype="multipart/form-data">
         <input type="file" name="upfile" id="upload" />
         <button type="submit">Upload</button>
       </form>
